@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapore Italiano</title>
+    <link rel="icon" href="/IMG/Logo_AzulOscuro.ico">
+    <link rel="stylesheet" type="text/css" href="reserva.css">
+    <!-- LINKS A LOS ICONOS, justo aquí debajo-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <!--Link a Librería de JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- LINK a la API de Google Maps-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"></script>
+    <script src="https://kit.fontawesome.com/095f6d5581.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Header para version PC-->
+    <div id="header-pc">
+      <div class="headercolumna1">
+        <a href="#">
+          <img src="/IMG/Logo_header.svg" alt="Logo Sapore Italiano">
+        </a>
+      </div>
+      <div class="headercolumna2">
+        <nav>
+          <ul class="nav-link">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#nosotros">Nosotros</a></li>
+            <li><a href="/index.html#novedades">Novedades</a></li>
+            <li><a href="/menu.html">Menú</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="headercolumna3">
+        <a href="/reserva.html" class="btn"><button>Reservar</button></a>
+      </div>
+    </div>
+
+    <!-- Header para version Movil-->   
+    <div id="header-movil">
+      <a href="/index.html">
+        <img src="/IMG/Logo_Blanco.png" alt="Logo">
+      </a>
+      <div id="menu-hamburguesa">
+        <a href="#">
+          <img src="/IMG/Logo_MenuHamburguesa.svg" alt="Menu">
+        </a>
+        <ul class="nav-link-movil">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.html#nosotros">Nosotros</a></li>
+          <li><a href="/index.html#novedades">Novedades</a></li>
+          <li><a href="/menu.html">Menú</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Formulario reserva --> 
+    <section class="reserva">
+        <div>
+          <h2 class="titulo-formulario">. Haz tu reserva .</h2>
+          <img src="/IMG/Imagen_Reserva.jpg" alt="Imagen">
+        </div>
+        
+        <form>
+          <div class="form-group">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Número de teléfono:</label>
+            <input type="phone" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="mail">Correo electrónico:</label>
+            <input type="mail" id="mail" name="mail" required>
+          </div>
+          <div class="form-group">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+          </div>
+          <div class="form-group">
+            <label for="hora">Hora de reserva:</label>
+            <input type="time" id="hora" name="hora" required>
+          </div>
+          <div class="form-group">
+            <label for="personas">Número de personas:</label>
+            <input type="number" id="personas" name="personas" min="1" max="10" required>
+            <p>* A partir de <strong>15 personas</strong> ponerse en contacto directamente con el local</p>
+          </div>
+          <div class="form-group">
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+          </div>
+          <a href="#" class="btn-enviar"><button>Enviar</button></a>
+        </form>
+      </section>
+
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2148.520647086508!2d-3.6897999228086054!3d40.39850332502423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422706bff431ad%3A0xe1297343074f52c0!2sTalent%20Garden%20Madrid!5e0!3m2!1ses!2ses!4v1679252212806!5m2!1ses!2ses" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+      
+
+
+    <!-- ---------------------- FOOTER ---------------------- -->
+    <!-- ---------------------- FOOTER ---------------------- -->
+    <!-- ---------------------- FOOTER ---------------------- -->
+
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+          <div class="box">
+              <figure class="logo">
+                  <a href="#">
+                      <img src="/IMG/Logo_Footer.svg" alt="logodesapore">
+                  </a>
+              </figure>
+          </div>
+      
+          <div class="box">
+              <h2>Equipo</h2>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, iure!</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dignissimos?</p>
+          </div>
+      
+          <div class="box">
+              <h2>Síguenos</h2>
+              <div class="redsocial">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+              </div>
+          </div> 
+      </div>
+      <div class="grupo-2">
+         <small> &copy; 2023 <b>Sapore Italiano</b> - Todos los derechos reservados</small>
+     </div>
+    </footer>
+    
+</body>
+</html>

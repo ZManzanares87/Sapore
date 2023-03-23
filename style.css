@@ -1,0 +1,486 @@
+/*PARA USAR ESTA FUENTE ----- font-family: 'Bodoni Moda', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap');
+            /*PARA USAR ESTA FUENTE ----- font-family: 'Roboto Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;800&display=swap');
+
+
+
+body {
+  box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box; /* Para que la web se ajuste al tamaño de la pantalla */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    margin-top: -200px;
+    width: 100%;
+}
+
+/*---------------------------- HEADER-----------------------*/
+/*---------------------------- HEADER-----------------------*/
+/*---------------------------- HEADER-----------------------*/
+#header-pc {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 5;
+    width: 100%;
+    padding: 5px 8%;
+  }
+
+
+.headercolumna1 {
+    margin-right: auto;
+  }
+  
+.headercolumna1 img {
+    
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+  }
+  
+.headercolumna1 img:hover {
+    transform: scale(1.1);
+  }
+  
+.headercolumna2 .nav-link a {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 18px;
+    
+  }
+  
+.headercolumna2 .nav-link li {
+    display: inline-block;
+    justify-content: flex-end;
+    color: white;
+    list-style: none;
+    padding: 0px 10px;
+    align-items: end;
+    text-align: center;
+  }
+.headercolumna2 .nav-link li:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid white;
+  }
+.headercolumna2 .nav-link a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;   
+  }
+  
+.headercolumna3 a.btn {
+    justify-content: flex-end;
+    margin-left: 20px;
+  }
+  
+.headercolumna3 a.btn button {
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 0px 100px 50px rgba(27, 48, 57, 0.5);
+  }
+  
+.headercolumna3 a.btn button:hover {
+    background-color: white;
+    color: rgba(216, 85, 85, 0.854);
+    transform: scale(1.1);
+  }
+  
+.headercolumna2 .nav-link a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  
+#header-movil {
+    display: none;
+  }
+  
+  /* header responsive version Móvil */
+  
+  @media only screen and (max-width: 768px) {
+  
+      #header-pc {
+        display: none;
+      }
+    
+      #header-movil {
+        margin-top: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        background-color: #1b3039;
+        padding: 10px;
+      }
+  
+      #header-movil img {
+        max-height: 40px;
+      }
+  
+      #menu-hamburguesa {
+        display: flex;
+        align-items: center;
+      }
+  
+      #menu-hamburguesa img {
+        max-height: 30px;
+        margin-right: 10px;
+      }
+  
+      #menu-hamburguesa .nav-link-movil {
+        display: none;
+      }
+  
+      #menu-hamburguesa:hover .nav-link-movil {
+        display: block;
+        position: absolute;
+        height: auto;
+        width: auto;
+        top: 60px;
+        right: 10px;
+        background-color: #1b3039;
+        padding: 10px;
+      }
+  
+      #menu-hamburguesa .nav-link-movil li {
+        margin-bottom: 10px;
+        list-style: none;
+        text-align: center;
+      }
+  
+      #menu-hamburguesa .nav-link-movil li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        font-size: 18px;
+        border-bottom: 2px solid white;
+      }
+  
+  }
+
+
+/*---------------------------- Main page-----------------------*/
+/*---------------------------- Main page-----------------------*/
+/*---------------------------- Main page-----------------------*/
+/*Main page*/
+#fondomain img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+#contenedor img {
+    position: relative;
+    padding-top: 200px;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnmain {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
+
+.btnmain a button {
+    padding-top: 0px;
+    padding: 11px 27px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #1b3039;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 0px 100px 50px rgba(27, 48, 57, 0.5);
+}
+.btnmain button:hover {
+    background-color: white;
+    color: rgba(216, 85, 85, 0.854);
+    transform: scale(1.1);
+}
+
+#contenedor-movil img {
+    width: 100%;
+}
+
+#contenedor-movil {
+    display: none;
+    z-index: -10;
+}
+
+@media only screen and (max-width: 768px) {
+   
+    #contenedor-movil {
+        display: block;
+    }
+
+    #contenedor img {
+        display: none;
+    }
+}
+
+
+/* -------------------------- Nosotros Sección -------------------------- */
+/* -------------------------- Nosotros Sección -------------------------- */
+/* -------------------------- Nosotros Sección -------------------------- */
+.nosotros {
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #eceff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros .nosotros-contenido img {
+    height: auto;
+    width: 500px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.text-nosotros {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.nosotros-contenido {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-nosotros h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: rgba(216, 85, 85);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-nosotros h3 {
+    color: #1b3039;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.text-nosotros p {
+    color: #1b3039;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+
+
+/*---------------------------------- NOVEDADES ----------------------------------*/
+/*---------------------------------- NOVEDADES ----------------------------------*/
+/*---------------------------------- NOVEDADES ----------------------------------*/
+
+
+
+
+#novedades {
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.03em;
+    line-height: 1,3;
+    background-color: #1b3039;
+}
+
+.title {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: rgba(216, 85, 85);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container-novedades {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.container-novedades .card {
+  background-color: #eceff1;
+  width: 270px;
+  height: 410px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+.container-novedades .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.container-novedades .card img {
+  width: 310px;
+  height: 210px;
+  
+}
+.container-novedades .card h4 {
+  color: rgba(216, 85, 85, 0.854);
+  padding-top: 25px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 1em;
+}
+.container-novedades .card p {
+  color: #1b3039;
+  font-family: 'Roboto Slab', serif;
+  padding: 0 1rem;
+  font-size: 11px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+
+
+/*---------------------------------- FOOTER ----------------------------------*/
+/*---------------------------------- FOOTER ----------------------------------*/
+/*---------------------------------- FOOTER ----------------------------------*/
+
+footer {
+  width: 100%;
+  bottom: 0;
+}
+
+.pie-pagina {  
+  width: 100%;
+  background-color: white;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+
+  width: 300px;
+
+}
+.pie-pagina .grupo-1 .box h2{
+  color:#1b3039;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family:'Bodoni Moda', serif ;
+
+}    
+
+.pie-pagina .grupo-1 .box p{
+  color:#1b3039;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
+  
+}
+.pie-pagina .grupo-1 .redsocial a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color:#1b3039;
+  background-color:rgb(252, 178, 178);
+  border-radius: 50px;
+  text-align: center;
+  transition: all 300ms ease;
+  font-size: 30px;
+
+}
+
+.pie-pagina .grupo-1 .redsocial a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.pie-pagina .grupo-2 {
+  background-color: rgb(252, 178, 178);
+  padding: 15px 10px;
+  text-align: center;
+  color:#1b3039 ;
+}
+.pie-pagina .grupo-2 {
+  font-size: 15px;
+}
+@media screen and (max-width:800px) {
+  .pie-pagina .grupo-1{
+      width: 100%;
+      grid-template-columns:repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+      margin-right: 20px;
+      margin-left: 20px;
+      text-align: center;
+  
+  }
+  .pie-pagina .grupo-1 .box{
+     margin-top: solid 1px #1b3039;
+
+  }
+}
